@@ -23,8 +23,19 @@ img{
 h2{
     margin-top: 20px;
     margin-left: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-right: 90px;
     font-size: 20px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    text-align: center;
+    margin-right: 100px;
+    color: red;
+    
 }
 
 .inputs{
@@ -70,4 +81,10 @@ button:active{
 
 input::placeholder{
     font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
 }
