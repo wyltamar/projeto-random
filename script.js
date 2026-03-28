@@ -5,9 +5,16 @@ function drawRandomNumber(){
     const max = Math.floor(document.querySelector('#input2').value);
 
     const randomNumber = Math.random() * (max - min + 1) + min;
-    console.log(randomNumber);
 
-    document.querySelector('h3').textContent = `Número sorteado: ${Math.floor(randomNumber)}`;
+    if(max > min){
+        document.querySelector('h3').textContent = `Número sorteado: ${Math.floor(randomNumber)}`;
+    }  
+    else{
+        document.querySelector('h3').textContent = 'O número máximo deve ser maior que o mínimo.';
+    }
+
+
+    
 
 
 }
